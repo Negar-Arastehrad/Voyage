@@ -1,0 +1,40 @@
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col h4{
+    font-size: 3.3vmin;
+    color: var(--text-color);
+    margin: 20px auto;
+}
+
+.col p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+.col .ctn{
+    margin-top: 30px;
+    border: none;
+}
+
+.col img{
+    width: 80%;
+}
+
+
+@media only screen and (max-width:850px){
+
+    .col img{
+       width: 100%;
+    }
+
+    .col{
+        margin-top: 30px;
+    }
+
+}

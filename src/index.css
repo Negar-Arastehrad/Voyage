@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lora', serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --design-color: #ef233c;
+  --text-color: #3a506b;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:visited{
+  color: whitesmoke;
+}
+
+a:hover{
+  color: var(--design-color);
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+.ctn{
+  color: whitesmoke;
+  background-color: var(--design-color);
+  border-radius: 30px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  transition: .2s ease;
+  font-family: 'Lora', serif;
+}
+
+.ctn:hover{
+  background-color: whitesmoke;
+  color: var(--design-color);
+  box-shadow: 2px 2px 5px #00000056;
+}
+
+.line{
+  width: 150px;
+  height: 4px;
+  background-color: var(--design-color);
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+img{
+  transition: .3s ease;
 }

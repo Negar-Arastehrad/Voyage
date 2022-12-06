@@ -1,0 +1,31 @@
+.events{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.events .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.events .title{
+    text-align: center;
+    font-size: 3vmin;
+    color: var(--text-color);
+}
+
+.events .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:850px){
+    .events .row{
+        flex-direction: column;
+    }
+}

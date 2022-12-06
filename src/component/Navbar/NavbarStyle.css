@@ -1,0 +1,71 @@
+.navbar{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar .container .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container .nav-links li{
+    margin: 0 30px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:850px){
+
+    .hamburger{
+        display: block;
+        color: whitesmoke;
+        font-size: 2.5rem;
+        padding-right: 1rem;
+        z-index: 3;
+    }
+
+    .logo{
+        z-index: 3;
+    }
+    
+    .nav-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--text-color);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        border-bottom-right-radius: 30%;
+        transition: .5s ease;
+        z-index: 2;
+    }
+
+    .nav-links li{
+        margin: 30px auto !important;
+        font-size: 4vmin;
+    }
+
+    .active{
+        top:0;
+    }
+
+
+}
+
+
+

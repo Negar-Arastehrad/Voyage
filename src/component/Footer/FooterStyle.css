@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--text-color);
+    padding: 20px 80px;
+    
+}
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 10px auto;
+}
+
+

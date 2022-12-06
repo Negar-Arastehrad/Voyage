@@ -1,0 +1,69 @@
+.tours{
+    width: 100%;
+    height: 100%;
+}
+
+.tours .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 80px auto;
+}
+
+.tours .image-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tours h1{
+    font-size: 7vmin;
+    color: var(--text-color);
+}
+
+.tours p{
+    margin: 20px auto;
+    color: #7c7c7c;
+}
+
+.tours .line{
+    margin : 10px 4px;
+}
+
+.tours .ctn{
+    font-size: 2.5vmin;
+}
+
+.tours img{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:850px){
+
+    .tours .image-col{
+        grid-template-columns: 1fr;
+        
+    }
+
+    .tours .row{
+        flex-direction: column;
+    }
+
+    .tours .content-col{
+        text-align: center;
+    }
+
+    .tours .line{
+        margin: 10px auto;
+    }
+
+    .tours img{
+        width: 100%;
+        height: 90%;
+        margin: 20px auto;
+    }
+
+
+}
