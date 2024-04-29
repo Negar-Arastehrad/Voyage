@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    min-height: 100px;
+    height: 100%;
     background-color: var(--text-color);
     padding: 20px 80px;
     
